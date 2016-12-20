@@ -1,0 +1,57 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <VBox 
+	fitContainer="true"
+	alignItems="Stretch"
+	justifyContent="SpaceBetween">
+		<HBox
+		justifyContent="Center"
+		alignItems="Center">
+			<ObjectHeader
+				title="{venue}"
+				icon="/img/{venue}.png">
+			</ObjectHeader>
+		</HBox>
+		
+		<Label
+		text="Starters"
+		design="Bold"
+		width="100%"
+		textAlign="Center"></Label>
+		<Text 
+		text="{starter1}"
+		width="100%"
+		textAlign="Center"></Text>
+		<Text 
+		width="100%"
+		textAlign="Center"
+		text="{starter2}"></Text>
+		<Label 
+		text="Main Courses"
+		design="Bold"
+		width="100%"
+		textAlign="Center"></Label>
+		<Text
+		width="100%"
+		textAlign="Center"
+		text="{main1}"></Text>
+		<Text 
+		width="100%"
+		textAlign="Center"
+		text="{main2}"></Text>
+		<Text 
+		width="100%"
+		textAlign="Center"
+		text="{mainveg}"></Text>
+		<Label 
+		design="Bold"
+		width="100%"
+		textAlign="Center"
+		text="Dessert"></Label>
+		<Text 
+		width="100%"
+		textAlign="Center"
+		text="{dessert}"></Text>
+	</VBox>
+</core:FragmentDefinition>

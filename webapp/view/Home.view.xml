@@ -1,0 +1,46 @@
+<mvc:View controllerName="briani99.ui5.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page 
+			id="menuPage"
+			title="{i18n>title}">
+				<customHeader>
+					<Bar>
+						<contentLeft>
+							<Button
+								id="btnLeft"
+								icon="sap-icon://close-command-field"
+								press="onPreviousDay">
+							</Button>
+						</contentLeft>
+						<contentMiddle>
+								<Label
+									id="headerLabel"
+									design="Bold"
+									width="100%"
+									textAlign="Center">
+								</Label>
+						</contentMiddle>
+						<contentRight>
+							<Button
+								id="btnRight"
+								icon="sap-icon://open-command-field"
+								press="onNextDay">
+							</Button>
+						</contentRight>
+					</Bar>
+				</customHeader>
+				<content>
+					<Carousel 
+					id="menuCaro"
+					width="auto"
+					visible="true">
+						<pages>
+							<!--programatically put the fragments in a bind aggregation here-->
+						</pages>
+					</Carousel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

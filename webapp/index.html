@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		<!--<meta http-equiv="cache-control" content="no-cache" />-->
+		
+		<title>sodexoMenu</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async" 
+			data-sap-ui-appCacheBuster="./"
+			data-sap-ui-resourceroots='{"briani99.ui5": ""}'>
+		</script>
+		<!--Android Icons-->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="img/knifefork192.png">
+		
+		<!--Apple icons-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	    
+	    <link rel="apple-touch-icon" href="img/knifefork57.png">
+	    <link rel="apple-touch-icon" sizes="72x72" href="img/knifefork72.png">
+	    <link rel="apple-touch-icon" sizes="114x114" href="img/knifefork114.png">
+	    <link rel="apple-touch-icon" sizes="144x144" href="img/knifefork144.png">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "briani99.ui5"
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>
